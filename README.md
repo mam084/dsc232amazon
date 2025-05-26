@@ -40,8 +40,9 @@ Our preprocessing pipeline includes:
 
 Data exploration and data download can be found in the linked Jupyter Notebooks:
 
-**[Amazon Reviews Exploration Notebook](./Amazon_rewiews_exploration.ipynb)**
-**[GDP Data Exploration](./GDP_Explore.ipynb)**
+**[First Model Notebook](./Milestone_3.ipynb)** || 
+**[Amazon Reviews Exploration Notebook](./Amazon_rewiews_exploration.ipynb)** || 
+**[GDP Data Exploration](./GDP_Explore.ipynb)** || 
 **[Data Download](./Data_download.ipynb)**
 
 
