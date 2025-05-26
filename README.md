@@ -89,12 +89,13 @@ We implemented logistic regression as our baseline classifier and conducted syst
 set to identify optimal model configurations. After selecting the best-performing parameters based on validation metrics, 
 we evaluated the final model's performance on our held-out test set to assess its generalization capability.
 
-**Train/Test Split**: We split the dataset into training and test sets using an 80/20 ratio. Reviews were randomly sampled after 
+**Train/Test Split**: We split the dataset into training and test sets using an 60/20/20 ratio. Reviews were randomly sampled after 
 filtering to ensure balanced positive and negative examples.
 **Evaluation Metrics**:
 - Training Accuracy (C = 0.1): 0.8912
-- Training AUC: 0.9400
-- Test Accuracy: 0.8109
+- Validation AUC: 0.9400
+- Validation Accuracy: 0.8909
+- Test Accuracy: 0.8910
 - Test AUC: 0.9424
 
 ---
