@@ -74,18 +74,26 @@ We finalized our major preprocessing pipeline with the following steps:
 ## Model Interpretation
 
 - **Fitting Status**: Underfitting  
-  
-
-- **Next Steps**:
-  - 
 
 ---
 
 ## Conclusion
 
 Our initial model showed that:
-- Our pipeline can process large-scale reviews and compute sentiment effectively.
-- More complex models and features will be explored in the next phase.
+- Our initial results indicate that the current model is promising, but there remains headroom for improvement. 
+- We will attempt an ensemble framework by experimenting with logistic regression variants and gradient
+boosted libraries such as XGBoost and LightGBM. Each will be evaluated within a validation pipeline to
+ensure fair comparisons of accuracy and F1 score.
+- If the basic weak learner ensemble shows potential, we’ll layer a weighted voting system to further
+improve performance.
+- At the same time, we’ll explore additional feature engineering ideas. On the text side, we’ll benchmark
+and optimize different tokenization strategies, such as word level, character n grams, and contextual
+embeddings, while also streamlining the processing pipeline for speed and processing efficiency.
+- Throughout all iterations, we will monitor not only improvements in predictive metrics but also
+overfitting/underfitting and model stability.
+- By iterating on both algorithmic and feature engineering fronts, we are confident we can fully
+realize and exceed our model’s performance goals.
+
 
 **Next Steps**:
 - Moving forward, our plan is for each team member to independently develop a distinct 
