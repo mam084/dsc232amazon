@@ -36,6 +36,14 @@ Our preprocessing pipeline includes:
 5. Category Selection: Focusing on key product categories that reflect essential or price-sensitive spending (e.g., groceries, electronics).
 6. Sentiment Scoring: Using NLP sentiment models to quantify emotional tone for each review.
 
+## Plot Explanations
+
+### Plot 1: Helpful Rating
+
+### Plot 2: Comparison of Rating Distributions by Product Category
+
+- This graph gives
+
 ## Notebook
 
 Data exploration and data download can be found in the linked Jupyter Notebooks:
