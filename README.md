@@ -19,6 +19,11 @@ We used SDSU Expanse to run this project. Sbatch was not used to submit jobs, in
 
 https://amazon-reviews-2023.github.io/
 
+### Data sets used:
+- Luxury items
+- Baby Products
+- Essential Products
+
 
 ## Data Exploration Summary
 
