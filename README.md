@@ -54,11 +54,21 @@ Our preprocessing pipeline includes:
 
 ## Plot Explanations
 
-### Plot 1: Helpful Rating
+### Plot 1: Rating vs Helpful Votes
+
+- This scatter plot maps the number of helpful votes against star ratings. Most reviews with high helpfulness cluster around the 1, 4, or 5 star rating. Reviews with a massive amount of helpful ratings occur at all levels, but are extremely rare in all cases. The vast majority of reviews have fewer than 100 helpful votes. While high star ratings receive vast amounts of helpful ratings, negative reviews seem to also gather a large amount of these votes.
 
 ### Plot 2: Comparison of Rating Distributions by Product Category
 
-- This graph gives
+- Stacked bar charts that have the year as the x-axis and amount of votes as the y-axis (seperated by rating level). A chart for essential products, luxury products, and all products helps give insight into any distribution trends. Most ratings are 4/5 stars across all product types. Rating volume grows significantly over time, peaking around 2014-2016. Luxury PRoducts have a sharper rise and fall in reviews compared to essentials, a potentially crucial insight in the context of this project. Overall, product reviews have become more frequent over time and consumers tend to give high ratings regardless of product type. The volatility in the luxury products category, however, is a notable trend.
+
+### Plot 3: Yearly Average Ratings by Product Category
+
+- The plot on the left represents the average rating of essential products over time (years). The middle plot accomplishes the same goal with luxury items. Finally, the plot on the right showcases the average rating across all product categories. It is immediately apparent that the plots of luxury items and all products share a significant resembelence to one another (with luxury items perhaps scoring slightly higher during certain years). The average ratings for essential products are significantly lower from 2000 - 2005, but then resembles the other charts starting around 2015. In all 3 cases, a noticeable dip and down trend can be observered at 2020, which may be attributed to the COVID-19 pandemic.
+
+### Plot 4: Comparison of Average Ratings & Review Growth Over Time
+
+- In the left chart, the previously described line charts of average ratings are stacked together for direct comparison. A convergance seems to occur after 2010, with all categories averaging between 4.0 - 4.3. For the right chart, we can clearly seen explosive growth in the number of reviews from 2000 - 2015. The trends still point to more growth, but has relatively plateaued compared to the previous decade. We can see that average consumer sentiment is consistent across product types in recent years, and the boom in online shopping and review activity is clearly visible post 2010.
 
 ## Notebook
 
