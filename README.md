@@ -4,6 +4,22 @@
 
 This project investigates whether consumer sentiment in Amazon product reviews can serve as an early indicator of broader economic trends. By analyzing millions of reviews using natural language processing (NLP), we aim to uncover patterns in tone, emotional intensity, and volume—especially in price-sensitive product categories—and evaluate their correlation with economic indicators such as inflation and consumer confidence.
 
+## Environment Setup
+
+We used SDSU Expanse to run this project. Sbatch was not used to submit jobs, instead we set up Jupyter notebook session with these parameters for data exploration:
+- Partition: shared
+- Time limit: 90 mins
+- Number of cores: 9
+- Memory required per node (GB): 184
+- Singularity image file location: ~/esolares/spark_py_latest_jupyter_dsc232r.sif
+- Environment module: singularitypro
+- Working directory: Home
+
+## Data download link: 
+
+https://amazon-reviews-2023.github.io/
+
+
 ## Data Exploration Summary
 
 We began our analysis by evaluating the structure and properties of the review dataset:
