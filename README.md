@@ -10,11 +10,11 @@ We began our analysis by evaluating the structure and properties of the review d
 
 - Number of Observations: Millions of product reviews spanning multiple years and categories.
 - Columns: Key columns include:
-  - asin: Product ID
-  - reviewText: Main review text
-  - overall: Star rating (1–5 scale)
-  - helpful: Votes indicating usefulness of a review
-  - reviewTime: Date of review
+  - asin: Stores the unique product ID (Amazon Standard Identification Number) for each item. Used to group and identify reviews for the same product.
+  - reviewText: Contains the full text of each customer’s review. This column will be the primary input for running sentiment analysis and other NLP tasks such as keyword extraction or topic modeling.
+  - overall: Reflects the star rating (on a 1–5 scale) that a user gives a product. This serves as the ground truth label for supervised learning models and allows us to compare predicted sentiment with actual user ratings.
+  - helpful: Indicates how many users found a review helpful, typically formatted as a list. This can be used to filter low-quality reviews or to weight reviews by perceived usefulness.
+  - reviewTime: The date when the review was submitted. Useful for analyzing trends over time, identifying seasonal patterns, or detecting anomalies in review activity.
 - Distributions & Scales:
   - overall ratings are discrete and range from 1 to 5.
   - reviewText length varies widely and will be normalized during preprocessing.
