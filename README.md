@@ -15,6 +15,9 @@ We used SDSU Expanse to run this project. Sbatch was not used to submit jobs, in
 - Environment module: singularitypro
 - Working directory: Home
 
+Used packages and libraries:
+- os, pickle, glob, pyspark, pyspark.sql, numpy, matplotlib, seaborn, json
+
 ## Data download link: 
 
 https://amazon-reviews-2023.github.io/
