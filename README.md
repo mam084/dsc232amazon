@@ -23,9 +23,8 @@ Used packages and libraries:
 https://amazon-reviews-2023.github.io/
 
 ### Data sets used:
-- Luxury items
-- Baby Products
-- Essential Products
+- Luxury items: Movies and TV, Toys and Games
+- Essential Products: Baby Products, Grocery and Gourmet Food
 
 
 ## Data Exploration Summary
