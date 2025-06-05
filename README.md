@@ -31,16 +31,28 @@ https://amazon-reviews-2023.github.io/
 We began our analysis by evaluating the structure and properties of the review dataset:
 
 - Number of Observations: Millions of product reviews spanning multiple years and categories.
+  
 - Columns: Key columns include:
-  - asin: Product ID
-  - reviewText: Main review text
-  - overall: Star rating (1–5 scale)
-  - helpful: Votes indicating usefulness of a review
-  - reviewTime: Date of review
+  - asin: Stores the unique product ID (Amazon Standard Identification Number) for each item. Used to group and identify reviews for the same product.
+  - parent_asin: Parent ID of the product. Products with different colors, styles, and sizes usually belong to the same parent ID, but may have a different asin ID
+  - rating: Rating of the product from 1 to 5
+  - title: Title of the user Review
+  - text: Text body of the user review
+  - user_id: ID of the reviewer
+  - timestamp: Time of the review (unix)
+  - verified_purchase: User purchase verification (boolean value)
+  - images: Images that a user posts after they have received the product. Various sizes of image (small, medium, large)
+  - reviewText: Contains the full text of each customer’s review. This column will be the primary input for running sentiment analysis and other NLP tasks such as keyword extraction or topic modeling.
+  - helpful_vote: Indicates how many users found a review helpful, typically formatted as a list. This can be used to filter low-quality reviews or to weight reviews by perceived usefulness.
+  - reviewTime: The date when the review was submitted. Useful for analyzing trends over time, identifying seasonal patterns, or detecting anomalies in review activity.
+ 
+    
 - Distributions & Scales:
   - overall ratings are discrete and range from 1 to 5.
   - reviewText length varies widely and will be normalized during preprocessing.
   - Helpful votes are highly skewed with a long tail.
+ 
+  
 - Missing Data: Some reviews may be missing helpful vote info or may contain empty reviewText. These will be filtered out during preprocessing.
 - Preliminary Visualizations:
   - Histograms of ratings and helpful votes
@@ -57,6 +69,24 @@ Our preprocessing pipeline includes:
 4. Time Grouping: Aggregating sentiment scores by month/year for temporal analysis.
 5. Category Selection: Focusing on key product categories that reflect essential or price-sensitive spending (e.g., groceries, electronics).
 6. Sentiment Scoring: Using NLP sentiment models to quantify emotional tone for each review.
+
+## Plot Explanations
+
+### Plot 1: Rating vs Helpful Votes
+
+- This scatter plot maps the number of helpful votes against star ratings. Most reviews with high helpfulness cluster around the 1, 4, or 5 star rating. Reviews with a massive number of helpful ratings occur at all levels but are extremely rare in all cases. The vast majority of reviews have fewer than 100 helpful votes. While high star ratings receive vast amounts of helpful ratings, negative reviews seem to also gather a large amount of these votes.
+
+### Plot 2: Comparison of Rating Distributions by Product Category
+
+- Stacked bar charts that have the year as the x-axis and number of votes as the y-axis (separated by rating level). A chart for essential products, luxury products, and all products helps give insight into any distribution trends. Most ratings are 4/5 stars across all product types. Rating volume grows significantly over time, peaking around 2014-2016. Luxury Products have a sharper rise and fall in reviews compared to essentials, a potentially crucial insight in the context of this project. Overall, product reviews have become more frequent over time and consumers tend to give high ratings regardless of product type. The volatility in the luxury products category, however, is a notable trend.
+
+### Plot 3: Yearly Average Ratings by Product Category
+
+- The plot on the left represents the average rating of essential products over time (years). The middle plot accomplishes the same goal with luxury items. Finally, the plot on the right shows the average rating across all product categories. It is immediately apparent that the plots of luxury items and all products share a significant resemblance to one another (with luxury items perhaps scoring slightly higher during certain years). The average ratings for essential products are significantly lower from 2000 - 2005 but then resembles the other charts starting around 2015. In all 3 cases, a noticeable dip and down trend can be observed at 2020, which may be attributed to the COVID-19 pandemic.
+
+### Plot 4: Comparison of Average Ratings & Review Growth Over Time
+
+- In the left chart, the previously described line charts of average ratings are stacked together for direct comparison. A convergence seems to occur after 2010, with all categories averaging between 4.0 - 4.3. For the right chart, we can clearly see explosive growth in the number of reviews from 2000 - 2015. The trends still point to more growth but has relatively plateaued compared to the previous decade. We can see that average consumer sentiment is consistent across product types in recent years, and the boom in online shopping and review activity is clearly visible post 2010.
 
 ## Notebook
 
