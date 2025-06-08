@@ -56,12 +56,11 @@ If successful, this approach could offer economists, businesses, and policymaker
 
 Our modeling process followed a structured pipeline of data preprocessing, feature extraction, aggregation, transformation, and supervised learning using logistic regression. All modeling was conducted with attention to temporal structure, using chronological splits to prevent leakage.
 
-![](./figures/Picture1.png)
-**Figure 1:** Overview of the modeling pipeline, showing major data transformation and modeling stages.
+**[Figure 1:](./figures/Picture1.png)** Overview of the modeling pipeline, showing major data transformation and modeling stages.
 
 We used (1) Amazon review data filtered to four categories—Groceries, Baby Products, Toys & Games, and Movies & TV—and (2) U.S. GDP per capita data from 1996 to 2023. Reviews with 3-star ratings were excluded to sharpen sentiment signals. The remaining reviews included star ratings, text, category, and timestamps. GDP data was converted into binary labels: 1 for years with growth, 0 otherwise.
 
-![](./figures/US_Economic Indicators Over Time.png)
+![](./figures/US_Economic_Indicators_Over_Time.png)
 **Figure 2:** Trends in key U.S. economic indicators between 1996 and 2023. GDP per capita growth (black) served as the basis for labeling each year as an economic upturn or downturn in our classification task. Additional indicators—such as inflation, unemployment, and interest rates—are shown for context but were not directly used as input features in the model.
 
 #### Text and Sentiment Processing  
@@ -72,7 +71,7 @@ hashed term frequency vectors using the HashingTF function with 10,000 buckets. 
 vectors were then scaled using inverse document frequency (IDF) weighting to emphasize rare but 
 potentially informative terms. 
 
-![Figure 3](./figures/Picture2.png)
+![](./figures/Picture2.png)
 **Figure 3:** Illustration of text transformation steps from raw reviews to TF-IDF vectors. 
 
 In parallel, we performed sentiment scoring using TextBlob. Each review received a polarity score 
@@ -91,7 +90,7 @@ category level. For each combination, we computed:
 - Total review count 
 - Mean TF-IDF vector 
 
-(./figures/Picture4.png)
+![](./figures/Picture4.png)
 **Figure 5:** Yearly aggregation process for sentiment and TF-IDF vectors across essential and luxury 
 categories. 
 
@@ -109,7 +108,7 @@ emotional volatility. For each year, the following sentiment features were creat
 These statistics provided macro-style consumer behavior signals, which were then merged with GDP 
 labels and TF-IDF features. 
  
-(./figures/Picture5.png)
+![](./figures/Picture5.png)
 **Figure 6:** Range of polarity values returned by TextBlob for review d 
 
 We also calculated the sentiment difference between essential and luxury categories, allowing the model 
@@ -121,7 +120,7 @@ High-dimensional TF-IDF vectors were reduced via Principal Component Analysis (P
 components retained for each product category. This yielded 100 features per year, preserving variance 
 while reducing sparsity and complexity. 
 
-(./figures/Picture6.png)
+![](./figures/Picture6.png)
 **Figure 7:** Label assignment based on star ratings. Neutral reviews (3 stars) were discarded to emphasize 
 clear sentiment signals. 
 
@@ -135,7 +134,7 @@ computed delta-based features that captured year-to-year changes. Specifically, 
 These features quantify shifts in sentiment and emotional divergence between essential and luxury goods, 
 which may better reflect economic momentum. 
  
-(./figures/Picture7.png)
+![](./figures/Picture7.png)
 **Figure 8:** Final review-level input vector composed of TF-IDF text features and a polarity score. 
 Any  rows  missing  valid YOY differences were removed, reducing the usable dataset to 27 years 
 (1997–2023), with 23 years used for training and 5 years for testing. 
@@ -148,7 +147,7 @@ feature weighting due to scale differences.
 The binary label for each year indicated whether GDP per capita increased (1) or decreased/remained 
 constant (0) compared to the prior year. 
  
-(./figures/Picture8.png)
+![](./figures/Picture8.png)
 **Figure 9:** Aggregation of review features for year y and group g (essential or luxury), averaged across all 
 reviews in that group. 
 
@@ -158,7 +157,7 @@ We trained a logistic regression model with L1 regularization (elasticNetParam =
 using a chronological split: 1997–2018 for training, 2019–2023 for testing. This time-respecting strategy 
 avoided leakage and preserved forecasting realism. Performance was measured using AUC and accuracy. 
  
-(./figures/Picture10.png)
+![](./figures/Picture10.png)
 **Figure 10:** Difference in average sentiment polarity between essential and luxury categories for year y. 
  
 ### Results
@@ -193,11 +192,11 @@ recent years (2019–2023). The model achieved:
 - Training Accuracy: 1.000, Training AUC: 1.000
 - Test Accuracy: 0.800, Test AUC: 0.833 
  
-(./figures/Picture11.png)
+![](./figures/Picture11.png)
 **Figure 11:** Area under the ROC curve (AUC), calculated as the integral of the true positive 
 rate (TPR) with respect to the false positive rate (FPR). 
 
-(./figures/Picture12.png)
+![](./figures/Picture12.png)
 **Figure 12:** Accuracy, defined as the ratio of correct predictions (true positives and true 
 negatives) to the total number of test samples. 
 
