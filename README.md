@@ -61,7 +61,7 @@ Our modeling process followed a structured pipeline of data preprocessing, featu
 
 We used (1) Amazon review data filtered to four categories—Groceries, Baby Products, Toys & Games, and Movies & TV—and (2) U.S. GDP per capita data from 1996 to 2023. Reviews with 3-star ratings were excluded to sharpen sentiment signals. The remaining reviews included star ratings, text, category, and timestamps. GDP data was converted into binary labels: 1 for years with growth, 0 otherwise.
 
-(./figures/US_Economic Indicators Over Time.png)
+![](./figures/US_Economic Indicators Over Time.png)
 **Figure 2:** Trends in key U.S. economic indicators between 1996 and 2023. GDP per capita growth (black) served as the basis for labeling each year as an economic upturn or downturn in our classification task. Additional indicators—such as inflation, unemployment, and interest rates—are shown for context but were not directly used as input features in the model.
 
 #### Text and Sentiment Processing  
@@ -72,14 +72,14 @@ hashed term frequency vectors using the HashingTF function with 10,000 buckets. 
 vectors were then scaled using inverse document frequency (IDF) weighting to emphasize rare but 
 potentially informative terms. 
 
-[Figure 3](./figures/Picture2.png)
+![Figure 3](./figures/Picture2.png)
 **Figure 3:** Illustration of text transformation steps from raw reviews to TF-IDF vectors. 
 
 In parallel, we performed sentiment scoring using TextBlob. Each review received a polarity score 
 between –1 and +1, indicating its sentiment intensity. The polarity score was later combined with the 
 TF-IDF representation to form a unified feature vector for each review. 
  
-(./figures/Picture3.png)
+![](./figures/Picture3.png)
 **Figure 4:** Formula showing how polarity and TF-IDF vectors are concatenated into a final input vector. 
 
 #### Aggregation by Year and Product Group
