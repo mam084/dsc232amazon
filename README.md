@@ -53,10 +53,9 @@ We use two primary datasets:
 
 ## Notebook
 
-Data exploration and data download can be found in the linked Jupyter Notebooks:
+Final model and data download can be found in the linked Jupyter Notebooks:
 
-**[Amazon Reviews Exploration Notebook](./Amazon_rewiews_exploration.ipynb)**
-**[GDP Data Exploration](./GDP_Explore.ipynb)**
+**[Amazon Reviews GDP Analysis](./Amazon_reviews_GDP_analysis.ipynb)**
 **[Data Download](./Data_download.ipynb)**
 
 ## Method Summary
@@ -87,6 +86,5 @@ Randomized cross-validation performed poorly (AUC ~0.58), highlighting the impor
 
 ## Prior Submissions
 
-- `milestone_2_submission.ipynb` – Initial data exploration and preprocessing pipeline
-- `milestone_3_submission.ipynb` – Model development and cross-validation testing
-- `Amazon_rewiews_GDP_analysis.ipynb` – Final model using year-over-year sentiment features and PCA components
+- `Milestone_2.ipynb` – Initial data exploration and preprocessing pipeline
+- `Milestone_3.ipynb` – First model development
