@@ -55,7 +55,7 @@ We use two primary datasets:
 
 Final model and data download can be found in the linked Jupyter Notebooks:
 
-**[Amazon Reviews GDP Analysis](./Amazon_reviews_GDP_analysis.ipynb)**
+**[Amazon Reviews GDP Analysis](./Amazon_reviews_GDP_analysis.ipynb)** || 
 **[Data Download](./Data_download.ipynb)**
 
 ## Method Summary
@@ -86,5 +86,5 @@ Randomized cross-validation performed poorly (AUC ~0.58), highlighting the impor
 
 ## Prior Submissions
 
-- `Amazon_reviews_exploration.ipynb` – Initial data exploration and preprocessing pipeline
-- `Milestone_3.ipynb` – First model development
+- **[Amazon_reviews_exploration.ipynb](./Amazon_reviews_exploration.ipynb)** – Initial data exploration and preprocessing pipeline
+- **[Milestone_3.ipynb](./Milestone_3.ipynb)** – First model development
