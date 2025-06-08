@@ -56,7 +56,7 @@ If successful, this approach could offer economists, businesses, and policymaker
 
 Our modeling process followed a structured pipeline of data preprocessing, feature extraction, aggregation, transformation, and supervised learning using logistic regression. All modeling was conducted with attention to temporal structure, using chronological splits to prevent leakage.
 
-(./figures/Picture1.png)
+[./figures/Picture1.png]
 **Figure 1:** Overview of the modeling pipeline, showing major data transformation and modeling stages.
 
 We used (1) Amazon review data filtered to four categories—Groceries, Baby Products, Toys & Games, and Movies & TV—and (2) U.S. GDP per capita data from 1996 to 2023. Reviews with 3-star ratings were excluded to sharpen sentiment signals. The remaining reviews included star ratings, text, category, and timestamps. GDP data was converted into binary labels: 1 for years with growth, 0 otherwise.
@@ -72,7 +72,7 @@ hashed term frequency vectors using the HashingTF function with 10,000 buckets. 
 vectors were then scaled using inverse document frequency (IDF) weighting to emphasize rare but 
 potentially informative terms. 
 
-(./figures/Picture2.png)
+[Figure 3](./figures/Picture2.png)
 **Figure 3:** Illustration of text transformation steps from raw reviews to TF-IDF vectors. 
 
 In parallel, we performed sentiment scoring using TextBlob. Each review received a polarity score 
