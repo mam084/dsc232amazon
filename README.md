@@ -303,7 +303,7 @@ early signals of economic shifts.
 
 ### Contributions
 
--**Ann Nguyen**: 
+-**Ann Nguyen**:  
 -**Artien Voskanian**:  
 -**Joanna Tam**:  
 -**Matthew Mitchell**: GitHub management (hosting the repo, uploading files, and merging branches), README writing (original Module 2 and 3 submissions as well as the final submission), and Final Report Writing (namely Introduction, Method, and Results sections)
