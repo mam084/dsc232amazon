@@ -18,7 +18,7 @@ This repository includes:
 ## Final Report
 
 The complete written report is available here:  
-[**Amazon Review Sentiment as a Predictor of Economic Trends (PDF)**](./Amazon_view_Sentiment_as_a_Predictor_of_Economic_Trends.pdf)
+[**Amazon Review Sentiment as a Predictor of Economic Trends (PDF)**](./Amazon_Review_Sentiment_as_a_Predictor_of_Economic_Trends.pdf)
 
 The report includes:
 - Introduction and hypothesis
