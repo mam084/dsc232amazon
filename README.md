@@ -75,14 +75,20 @@ Final model and data download can be found in the linked Jupyter Notebooks:
 
 Randomized cross-validation performed poorly (AUC ~0.58), highlighting the importance of temporal structure. The model correctly predicted key years like the 2020 downturn based on sentiment-only features.
 
-## Limitations and Future Work
+## Discussion
 
-- Only 27 years of data—sufficient in volume, but sparse in samples
-- Analysis limited to 4 product categories
-- Future work may include:
-  - Expanding to quarterly sentiment
-  - Incorporating verified purchase data or metadata
-  - Ensemble models combining traditional economic indicators
+This study demonstrates that consumer sentiment expressed in Amazon product reviews, when properly processed and temporally aligned, can reveal meaningful macroeconomic signals. Our final logistic regression model, trained on year-over-year sentiment changes and PCA-reduced textual features, was able to predict shifts in U.S. GDP per capita with strong accuracy and AUC on future test years. The model’s successful anticipation of the 2020 economic downturn provides compelling support for the broader hypothesis: that aggregated online review sentiment can reflect real-world financial behavior.
+
+However, the model’s perfect training performance (accuracy and AUC of 1.000) raises concerns about overfitting. Although the model remains relatively simple and generalizes well to unseen years—with a test AUC of 0.833—the 0.167 drop from training to testing performance suggests that some degree of overfitting is present. This reinforces the importance of using strictly chronological splits in time series contexts, as initial cross-validation experiments yielded misleadingly poor results due to temporal leakage.
+
+While the current approach shows promise, it is constrained by several limitations. First, the dataset spans only 27 annual observations, which, while rich in review volume, remains sparse as a sample for supervised learning. Second, only four product categories were included in the analysis, limiting the diversity of sentiment signals captured. Third, the use of annual aggregation restricts the model’s ability to detect short-term economic fluctuations.
+
+## Conclusion
+
+Despite these limitations, our findings suggest that large-scale sentiment data from consumer reviews can serve as a low-cost, high-frequency complement to traditional economic indicators. With further refinement—such as expanding to quarterly aggregation, integrating additional metadata (e.g., verified purchase tags or helpful vote counts), or combining sentiment-based predictors with standard economic variables in an ensemble framework—sentiment-driven forecasting could evolve into a valuable real-time tool for economic analysis and policy.
+
+This project demonstrates the feasibility of using consumer language as a macroeconomic input and opens the door to future research on scalable, crowd-sourced economic indicators.
+
 
 ## Prior Submissions
 
