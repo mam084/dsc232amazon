@@ -63,9 +63,8 @@ Randomized cross-validation performed poorly (AUC ~0.58), highlighting the impor
   - Incorporating verified purchase data or metadata
   - Ensemble models combining traditional economic indicators
 
-## Installation and Execution
+## Prior Submissions
 
-To run the notebooks locally:
-
-1. Clone the repository
-2. Install dependencies:
+- `milestone_2_submission.ipynb` – Initial data exploration and preprocessing pipeline
+- `milestone_3_submission.ipynb` – Model development and cross-validation testing
+- `Amazon_rewiews_GDP_analysis.ipynb` – Final model using year-over-year sentiment features and PCA components
