@@ -122,10 +122,10 @@ This project demonstrates the feasibility of using consumer language as a macroe
 
 ## Contributions
 
-**Ann Nguyen** – 
-**Artien Voskanian** – 
-**Joanna Tam** – 
-**Matthew Mitchell** – GitHub management (hosting the repo, uploading files, and merging branches), README writing (original Module 2 and 3 submissions as well as the final submission), and Final Report Writing (namely Introduction, Method, and Results sections)
+-**Ann Nguyen**: 
+-**Artien Voskanian**:  
+-**Joanna Tam**:  
+-**Matthew Mitchell**: GitHub management (hosting the repo, uploading files, and merging branches), README writing (original Module 2 and 3 submissions as well as the final submission), and Final Report Writing (namely Introduction, Method, and Results sections)
 
 
 ## Prior Submissions
