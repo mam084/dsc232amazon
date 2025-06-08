@@ -86,5 +86,5 @@ Randomized cross-validation performed poorly (AUC ~0.58), highlighting the impor
 
 ## Prior Submissions
 
-- `Milestone_2.ipynb` – Initial data exploration and preprocessing pipeline
+- `Amazon_reviews_exploration.ipynb` – Initial data exploration and preprocessing pipeline
 - `Milestone_3.ipynb` – First model development
