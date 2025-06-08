@@ -51,6 +51,14 @@ We use two primary datasets:
 2. **U.S. GDP per Capita**: Yearly data from 1996 to 2023.  
    Source: World Bank and supplemental public datasets
 
+## Notebook
+
+Data exploration and data download can be found in the linked Jupyter Notebooks:
+
+**[Amazon Reviews Exploration Notebook](./Amazon_rewiews_exploration.ipynb)**
+**[GDP Data Exploration](./GDP_Explore.ipynb)**
+**[Data Download](./Data_download.ipynb)**
+
 ## Method Summary
 
 - **Preprocessing**: Filtered reviews (excluding neutral 3-star), TextBlob sentiment scoring, TF-IDF vectorization, and PCA compression
