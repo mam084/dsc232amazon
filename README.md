@@ -10,9 +10,9 @@ This repository includes:
 
 ## **Environment Setup**
 
-Environment: miniconda
+Environment: Miniconda
 
-Used packages and libraries: Python ver. 3.10, Pyspark (Ver 4.0.0), re, os, pickle, glob, pyspark.sql, pyspark.ml, numpy, matplotlib, seaborn, json, gdown, pandas, wordclous, textblob, scipy.stats
+Used packages and libraries: Python (ver. 3.10), Pyspark (Ver. 4.0.0), re, os, pickle, glob, pyspark.sql, pyspark.ml, numpy, matplotlib, seaborn, json, gdown, pandas, wordclous, textblob, scipy.stats
 
 ## **Dataset and Source**
 
