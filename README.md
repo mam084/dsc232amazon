@@ -28,7 +28,7 @@ We use two primary datasets:
 
 Final model and data download can be found in the linked Jupyter Notebooks:
 
-**[Amazon Reviews GDP Analysis](./Amazon_reviews_GDP_analysis.ipynb)** || 
+**[Amazon Reviews GDP Analysis](./Amazon_reviews_GDP_analysis_final.ipynb)** || 
 **[Data Download](./Data_download.ipynb)**
 
 ## Final Report
