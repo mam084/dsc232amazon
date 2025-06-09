@@ -56,7 +56,7 @@ If successful, this approach could offer economists, businesses, and policymaker
 
 Our modeling process followed a structured pipeline of data preprocessing, feature extraction, aggregation, transformation, and supervised learning using logistic regression. All modeling was conducted with attention to temporal structure, using chronological splits to prevent leakage.
 
-**[Figure 1:](./figures/Picture1.png)** Overview of the modeling pipeline, showing major data transformation and modeling stages.
+**[Figure 1:](./figures/Amazon_Data_Pipeline.png)** Overview of the modeling pipeline, showing major data transformation and modeling stages.
 
 We used (1) Amazon review data filtered to four categories—Groceries, Baby Products, Toys & Games, and Movies & TV—and (2) U.S. GDP per capita data from 1996 to 2023. Reviews with 3-star ratings were excluded to sharpen sentiment signals. The remaining reviews included star ratings, text, category, and timestamps. GDP data was converted into binary labels: 1 for years with growth, 0 otherwise.
 
