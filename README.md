@@ -10,17 +10,9 @@ This repository includes:
 
 ## Environment Setup
 
-We used SDSU Expanse to run this project. Sbatch was not used to submit jobs, instead we set up Jupyter notebook session with these parameters for data exploration:
-- Partition: shared
-- Time limit: 90 mins
-- Number of cores: 9
-- Memory required per node (GB): 184
-- Singularity image file location: ~/esolares/spark_py_latest_jupyter_dsc232r.sif
-- Environment module: singularitypro
-- Working directory: Home
+Environment: miniconda
 
-Used packages and libraries:
-- os, pickle, glob, pyspark, pyspark.sql, numpy, matplotlib, seaborn, json
+Used packages and libraries: Python ver. 3.10, Pyspark (Ver 4.0.0), re, os, pickle, glob, pyspark.sql, pyspark.ml, numpy, matplotlib, seaborn, json, gdown, pandas, wordclous, textblob, scipy.stats
 
 ## Dataset and Source
 
